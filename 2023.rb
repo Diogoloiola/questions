@@ -1,7 +1,7 @@
-childs = []
+names = []
 
-while line = gets.chomp
-  childs << line.chomp
+while line = gets
+  names << line.chomp
 end
 
-puts childs.sort.last
+puts names.sort! { |a, b| a.downcase <=> b.downcase }.last
