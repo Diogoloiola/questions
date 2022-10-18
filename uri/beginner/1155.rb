@@ -1,8 +1,10 @@
-require 'byebug'
-s = 0
+s = 1.0
+d = 2.0
 
-(1..100).each do |i|
-  c = 1 / i
-  s += c
+while d <= 100
+  s += 1.0 / d
+
+  d += 1.0
 end
-puts format('%.2f', s).to_s
+
+puts s.round(2)
